@@ -1,2 +1,5 @@
 .idea
 static
+static/
+static/admin
+static/admin/
