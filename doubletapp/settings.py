@@ -25,7 +25,7 @@ SECRET_KEY = '9fzmb4yy0$m6vuy408%ewy68np+-4jn8qsr@e6oj*_17p$amuo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'doubletapp-docker.herokuapp.com']
 
 
 # Application definition
