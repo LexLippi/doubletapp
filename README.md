@@ -14,6 +14,3 @@
 user: root
 
 password: password
-
-
-
