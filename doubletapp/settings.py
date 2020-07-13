@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-import django_heroku
-import dj_database_url
+# import django_heroku
+# import dj_database_url
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -76,20 +76,20 @@ WSGI_APPLICATION = 'doubletapp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'postgres',
-#         'USER': 'postgres',
-#         'PASSWORD': 'postgres',
-#         'HOST': 'db',
-#         'PORT': 5432,
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'db',
+        'PORT': 5432,
+    }
+}
 
-DATABASE_URL_HEROKU = ('postgres://ruaeypdzqhporn:4fef4b5e33013c367e52b8052cc7c5b64bf93cef465ae8db38f246e8dd3c1734@ec2'
-                       '-52-0-155-79.compute-1.amazonaws.com:5432/d3vfqs2hj1i1su')
-DATABASES = {'default': dj_database_url.config(DATABASE_URL_HEROKU)}
+# DATABASE_URL_HEROKU = ('postgres://ruaeypdzqhporn:4fef4b5e33013c367e52b8052cc7c5b64bf93cef465ae8db38f246e8dd3c'
+#                        '1734@ec2-52-0-155-79.compute-1.amazonaws.com:5432/d3vfqs2hj1i1su')
+# DATABASES = {'default': dj_database_url.config(DATABASE_URL_HEROKU)}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -136,4 +136,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 API_SECRET = ''
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
